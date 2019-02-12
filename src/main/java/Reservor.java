@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class Reservor {
     private String name;
-    private String ReservedAt;
+    private Date ReservedAt;
 
     public String getName()
     {
@@ -14,15 +14,15 @@ public class Reservor {
         return name;
     }
 
-    public String getReservedAt() {
+    public Date getReservedAt() {
         return ReservedAt;
     }
-    private String setReservedAt(String date)
+    private Date setReservedAt(Date date)
     {
         return ReservedAt = date;
     }
 
-    public Reservor(String name, String reservedAt)
+    public Reservor(String name, Date reservedAt)
     {
         this.name = name;
         this.ReservedAt = reservedAt;

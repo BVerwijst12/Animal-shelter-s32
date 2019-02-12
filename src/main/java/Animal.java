@@ -1,4 +1,6 @@
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class Animal {
@@ -31,7 +33,7 @@ public class Animal {
     {
         if (ReservedBy == null)
         {
-            String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+            Date timeStamp = Calendar.getInstance().getTime();
 
             ReservedBy = new Reservor(reservedBy, timeStamp);
             return true;
